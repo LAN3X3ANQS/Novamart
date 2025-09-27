@@ -199,3 +199,53 @@ img:hover {
   gap: 16px; 
 }
 
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+  header h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+  .container, .home-and-products, .product-list {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product-item {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  .horizontal-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  form input, form textarea, form button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+}
+
